@@ -4,30 +4,95 @@
     font-family: "Quicksand", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
 .menu {
     background-color: #373736;
     padding: 24px;
 }
 
-.menu_links {
-    color: #f1f1f1;
+.menu_conteudo {
     display: flex;
     gap: 16px;
     list-style: none;
     padding-left: 20px;
 }
 
-.menu_links li:hover {
+.menu_links {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.menu_conteudo li:hover {
     background-color: #868686;
 }
 
 .fundo_inicio {
     display: flex;
     background-color: #868686;
-    background: linear-gradient(rgba(60, 60, 59, 0.6)), url("../img/pexels-christina-morillo-1181244 1.png");
+    background: linear-gradient(rgba(60, 60, 59, 0.6)), url("../img/fundo-header.png");
     height: 512px;
     padding: auto;
     background-size: cover;
     justify-content: center;
     align-items: center;
+}
+
+/* Body */
+.projetos h2{
+    display: flex;
+    padding: 30px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    color: #000000;
+}
+
+.projetos h2::after{
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    width: 34px;
+    height: 3px;
+    background-color: #000000;
+}
+
+.projetos_img{
+    display: flex;
+    padding: 0% 36px;
+    flex-direction: column;
+}
+
+.apresentacao h2{
+    display: flex;
+    padding: 30px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    color: #000000;
+}
+
+.apresentacao h2::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    width: 35px;
+    height: 3px;
+    background-color: #000000;
+}
+
+.apresentacao_midia {
+    display: flex;
+    padding: 31px;
+    flex-direction: row;
+}
+
+.apresentacao img{
+    display: flex;
+    max-width: 591px;
+    height: 346px;
+    padding: 0% 36px;
 }
